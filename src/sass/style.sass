@@ -22,9 +22,16 @@
     &:focus
         outline: none
 
+.slider
+    display: flex
+    justify-content: space-between
+    height: 100%
+    .slick-list
+        height: 80%
+
 .slick-next, .slick-prev
     position: absolute
-    bottom: 0%
+    bottom: 10%
     right: 0%
     border: 0
     width: 50px
@@ -39,7 +46,7 @@
         transition: 1s
     &:focus
         outline: none
-    .btn_arrow_right, .btn_arrow_left
+    .btn_arrow_right, .btn_arrow_lefte
         position: absolute
         width: 12px
         height: 12px
@@ -55,8 +62,10 @@
     border-radius: 5px 0px 0px 5px
 
 .dots-style
+    position: absolute
+    bottom: 10%
+    left: 0%
     padding: 0
-    margin-top: 50px
     display: flex
     list-style: none
     .slick-active
@@ -92,7 +101,7 @@
             width: 50%
 
 @import 'header.sass';
-@import 'carousel.sass';
+@import 'first-screen.sass';
 @import 'services.sass';
 @import 'about_us.sass';
 @import 'with_us.sass';
