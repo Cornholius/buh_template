@@ -21,18 +21,18 @@
                     <img src="img/header/buhone.svg" alt="logo">
                 </div>
                 <div class="topline__navigation">
-                    <div class="topline__contacts">
+                    <div class="contacts">
                         <a href="tel:+71112223344" class="item"><img src="img/header/phone.svg" alt="phone">8 (111) 222-33-44</a>
                         <div class="item"><img src="img/header/clock.svg" alt="clock">Пн-Пт 10:00-18:00</div>
                         <div class="item"><img src="img/header/mail.svg" alt="mail">order@buhone.ru</div>
                         <div class="item"><img src="img/header/map.svg" alt="map">Невский пр. 130</div>
                     </div>
-                    <nav class="topline__menu">
-                        <li class="menu_item"><div class="menu_text"><a class="menu_link" href="#">Главная</a></div></li>
-                        <li class="menu_item"><div class="menu_text"><a class="menu_link" href="#">Услуги</a></div></li>
-                        <li class="menu_item"><div class="menu_text"><a class="menu_link" href="#">Кейсы</a></div></li>
-                        <li class="menu_item"><div class="menu_text"><a class="menu_link" href="#">О компании</a></div></li>
-                        <li class="menu_item"><div class="menu_text"><a class="menu_link" href="#">Контакты</a></div></li>
+                    <nav class="menu">
+                        <li class="menu_list__item"><div class="menu_text">Главная</div></li>
+                        <li class="menu_list__item"><div class="menu_text">Услуги</div></li>
+                        <li class="menu_list__item"><div class="menu_text">Кейсы</div></li>
+                        <li class="menu_list__item"><div class="menu_text">О компании</div></li>
+                        <li class="menu_list__item"><div class="menu_text">Контакты</div></li>
                     </nav>
                 </div>
             </div>
@@ -44,19 +44,7 @@
             <div class="slider slider_white">
                 <div class="first-screen__context">
                     <h1 class="h1">Бухгалтерские услуги<br>в Санкт-Петербурге</h1>
-                    <button class="button">Наша презентация</button>
-                </div>
-                <div class="first-screen__context">
-                    <h1 class="h1">Бухгалтерские услуги<br>в Санкт-Петербурге</h1>
-                    <button class="button">Наша презентация</button>
-                </div>
-                <div class="first-screen__context">
-                    <h1 class="h1">Бухгалтерские услуги<br>в Санкт-Петербурге</h1>
-                    <button class="button">Наша презентация</button>
-                </div>
-                <div class="first-screen__context">
-                    <h1 class="h1">Бухгалтерские услуги<br>в Санкт-Петербурге</h1>
-                    <button class="button">Наша презентация</button>
+                    <button class="button button_first-screen">Наша презентация</button>
                 </div>
             </div>
         </div>
@@ -90,38 +78,37 @@
     </section>
 
     <section class="about_us">
-        <div class="container">
-            <div class="about">
-                <div class="about__text">
-                    <h2 class="about__text__header">О нас</h2>
-                    <div class="about__text__subheader">
-                        Компания <span>ИвановПром</span>
-                    </div>
-                    <div class="about__text__info">
-                        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
-                    </div>
+        <div class="container about">
+            <div class="company-info">
+                <h4 class="company-info__header">О нас</h4>
+                <h3 class="company-info__subheader"> 
+                    Компания 
+                    <span class="company-info__subheader-blue">ИвановПром</span>
+                </h3>
+                <div class="company-info__text">
+                    Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
                 </div>
-                <div class="about__bars">
-                    <div class="bar">
-                        <div class="bar_header">90</div>
-                        <div class="bar_text">Завершено крупных сделок</div>
-                        <div class="bar_link">Все кейсы</div>
-                    </div>
-                    <div class="bar">
-                        <div class="bar_header">90</div>
-                        <div class="bar_text">Завершено крупных сделок</div>
-                        <div class="bar_link">Все кейсы</div>
-                    </div>
-                    <div class="bar">
-                        <div class="bar_header">90</div>
-                        <div class="bar_text">Завершено крупных сделок</div>
-                        <div class="bar_link">Все кейсы</div>
-                    </div>
-                    <div class="bar">
-                        <div class="bar_header">90</div>
-                        <div class="bar_text">Завершено крупных сделок</div>
-                        <div class="bar_link">Все кейсы</div>
-                    </div>
+            </div>
+            <div class="bars">
+                <div class="bar">
+                    <div class="bar__header">90</div>
+                    <div class="bar__text">Завершено крупных сделок</div>
+                    <div class="bar__link">Все кейсы</div>
+                </div>
+                <div class="bar">
+                    <div class="bar__header">90</div>
+                    <div class="bar__text">Завершено крупных сделок</div>
+                    <div class="bar__link">Все кейсы</div>
+                </div>
+                <div class="bar">
+                    <div class="bar__header">90</div>
+                    <div class="bar__text">Завершено крупных сделок</div>
+                    <div class="bar__link">Все кейсы</div>
+                </div>
+                <div class="bar">
+                    <div class="bar__header">90</div>
+                    <div class="bar__text">Завершено крупных сделок</div>
+                    <div class="bar__link">Все кейсы</div>
                 </div>
             </div>
         </div>
