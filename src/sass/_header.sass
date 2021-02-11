@@ -1,103 +1,79 @@
 .header
-
     &__top
         padding-top: 30px
         width: 100%
         display: flex
         justify-content: space-between  
-
     &__logo
         display: flex
         height: 42px
+    &__elem
+        display: flex
+        flex-direction: column
+        width: 65%        
+
+.contacts
+    height: 30px
+    padding: 0
+    margin: 0
+    display: flex
+    justify-content: space-between
+    font-family: Lato
+    font-weight: 400
+    font-size: 13px
+    list-style-type: none
+    &__item
+        color: #000000
+        &:hover
+            color: #000000
+            text-decoration: none
+    &__img
+        padding-right: 10px
+        height: 15px
 
 .menu
+    height: 30px
+    padding: 0
+    margin: 0
     display: flex
-    flex-direction: column
-    width: 65%
+    font-family: Lato
+    font-weight: 400
+    font-size: 13px
+    &--mt20
+        margin-top: 20px
     &__list
-        height: 30px
-        padding: 0
         margin: 0
+        padding: 0
+        width: 100%
         display: flex
-        justify-content: space-between
-        font-family: Lato
-        font-weight: 400
-        font-size: 13px
+        justify-content: space-between      
         list-style-type: none
-        &-lower
-            margin-top: 20px;
+    &__item
+        transform: skewX(-25deg)
+        &:before
+            content: ""
+            position: absolute
+            top: 0
+            left: 0
+            width: 0
+            height: 30px
+            background-color: rgba(0, 95, 163, 0.7)
+            transition: all 0.4s ease
+            z-index: -1
+        &:hover::before
+            width: 100%
     &__text
+        padding: 0 10px 0 10px
         height: 30px
         display: flex
+        align-items: center
         justify-content: space-between
         font-family: Lato
         font-weight: 700
         font-size: 14px
         text-transform: uppercase
         color: #000000
-    // &__item
-        // padding-right: 15px
-    //     height: 15px
-    //     width: 15px
-    &__img
-        padding-right: 10px
-    //     height: 15px
-    //     width: 15px
-            // // .contacts, .menu
-            //     height: 30px
-            //     display: flex
-            //     justify-content: space-between
-            //     font-family: Lato
-            //     font-weight: 400
-            //     font-size: 13px
-
-            //     .item
-            //         display: flex
-            //         justify-content: center
-            //         align-items: center
-            //         img
-            //             margin-right: 15px
-            //     a
-            //         text-decoration: none
-            //         color: #000000
-
-            // .menu
-            //     padding: 30px 0 0 0
-            //     height: 60px
-            //     margin: 0
-            //     align-items: center
-
-            //     .menu_text
-            //         position: relative;
-            //         padding: 5px 10px
-            //         font-size: 16px
-            //         font-weight: 700
-            //         list-style-type: none
-            //         text-transform: uppercase
-            //         cursor: pointer
-            //         transform: skewX(25deg)
-                    
-
-                // .menu_item
-                //     position: relative;
-                //     font-size: 16px
-                //     font-weight: 700
-                //     list-style-type: none
-                //     text-transform: uppercase
-                //     cursor: pointer
-                //     transform: skewX(-25deg)
-
-                //     &:before
-                //         content: ""
-                //         position: absolute
-                //         top: 0
-                //         left: 0
-                //         width: 0
-                //         height: 30px
-                //         background-color: rgba(0, 95, 163, 0.7)
-                //         transition: all 0.4s ease
-                //         z-index: -1
-
-                //     &:hover::before
-                //         width: 100%
-
+        transform: skewX(25deg)
+        &:hover
+            color: #000000
+            text-decoration: none
