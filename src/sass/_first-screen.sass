@@ -3,34 +3,39 @@
     // padding: 50px 0
     height: 670px
     background: url(../img/carousel/carousel01.jpg) center center/cover no-repeat
+    &__header
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+        display: block
+    &__subheader
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: #FFFFFF;
+        display: block
 
-.h2
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    color: #FFFFFF;
-    display: block
-.h3
-    font-family: Merriweather;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    color: #FFFFFF;
-    display: block
+.slider--white
+    height: 80%
+    padding-top: 50px;
+    .slick-next, .slick-prev
+        background: rgba(255, 255, 255, 0.6)
+        .btn_arrow_right, .btn_arrow_left
+            color: #fff
+            opacity: 1
+    .dots-style
+        .slick-active
+            button
+                background: #fff
+                opacity: 1
+        li
+            button
+                background: #fff
+                opacity: .4
 
-// .slider--white
-//     .slick-next, .slick-prev
-//         background: rgba(255, 255, 255, 0.6)
-//         .btn_arrow_right, .btn_arrow_left
-//             color: #fff
-//             opacity: 1
-//     .dots-style
-//         .slick-active
-//             button
-//                 background: #fff
-//                 opacity: 1
-//         li
-//             button
-//                 background: #fff
-//                 opacity: .4
+.button--first-screen
+    margin-top: 30px;
+    background-color: rgba(255,255,255, 0.2)
