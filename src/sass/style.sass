@@ -1,3 +1,11 @@
+$blue: #005FA3
+$white: #ffffff
+$black: #000000
+$gray: #BDBDBD
+$red: #ec0d0dbd
+$green: #31da22
+$brown: #ec8b0dbd
+
 .container
     display: block
     width: 57vw
@@ -9,14 +17,10 @@
     font-style: normal;
     font-weight: bold;
     font-size: 43px;
-    color: #FFFFFF;
+    color: $white
     display: block
     &--p50
         padding-top: 50px
-    &--blue
-        padding-top: 50px;
-        color: #005FA3;
-        text-align: center;
 
 .button
     margin-top: 30px;
@@ -31,33 +35,18 @@
     line-height: 25px
     text-align: center
     color: #FFFFFF
-    // background: #005FA3
     border: none
     border-radius: 5px
     &:focus
         outline: none
     &_header
         margin-top: 80px
-
-
-
-    
-.card
-    width: 400px
-    background-color: #3f3f3f
-    overflow: hidden
-    .wrapper
-        width: calc(200% + 40px)
-        display: flex
-        .main
-            margin-right: 20px
-            width: 50%
-        .desc
-            margin-left: 20px
-            width: 50%
+    &--white
+    margin-top: 40px;
+    background-color: rgba(255,255,255, 0.2)
 
 @import 'header.sass';
-// @import 'first-screen.sass';
+@import 'slider-box.sass';
 @import 'services.sass';
 @import 'about_us.sass';
 @import 'with_us.sass';

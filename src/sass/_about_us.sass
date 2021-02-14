@@ -6,11 +6,12 @@
     display: flex
     justify-content: space-between
 
-.company-info
+.info
     display: flex
     flex-direction: column
-    width: 50%
+    width: 40%
     &__header
+        margin: 0;
         font-family: Lato
         font-style: normal
         font-weight: 900
@@ -18,17 +19,19 @@
         line-height: 33px
         color: #BDBDBD
     &__subheader
-        margin-top: 40px
+        margin: 0;
+        padding-top: 40px
         font-family: Merriweather
         font-style: normal
         font-weight: 900
         font-size: 48px
         line-height: 69px
         color: #333333
-    &__subheader-blue
-        color: #005FA3
+        &--blue
+            padding: 0
+            color: $blue
     &__text
-        margin-top: 60px
+        padding-top: 60px
         font-family: Lato
         font-style: normal
         font-weight: 300
@@ -37,41 +40,41 @@
         color: #000000
 
 .bars
-    display: flex
-    flex-wrap: wrap
-    .bar
-        background: #EBEBEB;
-        width: 255px;
-        height: 255px;
-        color: #000000;
-        &_header
-            font-family: Lato;
-            font-style: normal;
-            font-weight: 900;
-            font-size: 55px;
-            line-height: 66px;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-        &_text
-            font-family: Lato;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 18px;
-            margin-top: 30px
-        &_link
-            font-family: Lato;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 17px;
-            text-decoration-line: underline;
-            color: #005FA3;
-
-        &:hover
-            background: #005FA3;
-            // color: #fff
-            transition: 1s
-            .bar_link
-                color: #000000
+    display: grid;
+    grid-template-columns: 1fr 1fr
+    gap: 3%;
+    width: 60%;
+.bar
+    padding: 20px;
+    background: #EBEBEB;
+    color: #000000;
+    &__header
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 55px;
+        line-height: 66px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    &__text
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        padding-top: 30px
+    &__link
+        font-family: Lato;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: #005FA3;
+    &:hover
+        background: #005FA3;
+        // color: #fff
+        transition: 1s
+        .bar__link
+            color: #000000
         
