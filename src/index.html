@@ -39,7 +39,7 @@
 
     <section class="slider-box">
         <div class="container">
-            <div class="slider slider--white">
+            <div class="slider slider--slider-box">
                 <div class="slider-box__context">
                     <h1 class="slider-box__header">Бухгалтерские услуги в Санкт-Петербурге</h1>
                     <h3 class="slider-box__subheader">
@@ -140,12 +140,12 @@
         </div>
     </section>
 
+    <!-- надо доделать слайдер. эта сволочь не отображает картинки, либо делает конские размеры. падла не хочет жить внутри контейнера -->
     <section class="with_us">
         <div class="container">
             <div class="with_us__header">Наши клиенты</div>
             <div class="with_us__subheader">С нами работают</div>
-            <div class="slider">
-                <img class="client-logo" src="img/with_us/logo.png" alt="logo">
+            <div class="slider slider--about-us">
                 <img class="client-logo" src="img/with_us/logo.png" alt="logo">
                 <img class="client-logo" src="img/with_us/logo.png" alt="logo">
                 <img class="client-logo" src="img/with_us/logo.png" alt="logo">
@@ -186,28 +186,28 @@
         </div>
     </section>
 
-    <section class="contact_us">
+    <footer class="footer">
         <div class="container">
-            <div class="wrapper">
-                <div class="contact_us__text">
-                    <div class="contact_us__text__header">Связь с нами</div>
-                    <div class="contact_us__text__subheader">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</div>
-                    <div class="contact_us__text__contacts">
-                        <div class="phone"><img src="img/contact_us/phone.png" alt="">+7 (111) 222-33-44</div>
-                        <div class="email"><img src="img/contact_us/email.png" alt="">order@bu-one.ru</div>
+            <div class="footer__elements">
+                <div class="contact-us">
+                    <div class="contact-us__header">Связь с нами</div>
+                    <div class="contact-us__subheader">У вас остались вопросы? Напишите нам - мы ответим в ближайшее время!</div>
+                    <div class="contact-us__horizontal-elems">
+                        <div class="contact-us__phone"><img class="contact-us__img" src="img/contact_us/phone.png" alt="">+7 (111) 222-33-44</div>
+                        <div class="contact-us__email"><img class="contact-us__img" src="img/contact_us/email.png" alt="">order@bu-one.ru</div>
                     </div>
                 </div>
-                <form class="contact_us__form">
-                    <div class="wrapper">
-                        <input class="name" required placeholder="Ваше имя"> 
-                        <input class="phone" required placeholder="Ваш телефон"> 
+                <form class="form">
+                    <div class="form__horizontal-elems">
+                        <input class="form__name" required placeholder="Ваше имя"> 
+                        <input class="form__phone" required placeholder="Ваш телефон"> 
                     </div>
-                    <textarea class="email" name="email" required placeholder="Ваше сообщение"></textarea>
-                    <button class="button">Отправить сообщение</button>
+                    <textarea class="form__email" name="email" required placeholder="Ваше сообщение"></textarea>
+                    <button class="button button--contact-us">Отправить сообщение</button>
                 </form>
             </div>
         </div>
-    </section>
+    </footer>
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

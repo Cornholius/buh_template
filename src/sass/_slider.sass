@@ -1,7 +1,24 @@
 .slider
     height: 100%
-    // display: flex
+    display: flex
+    &--slider-box
+        .slick-next, .slick-prev
+            background: rgba(255, 255, 255, 0.6)
+            .btn_arrow_right, .btn_arrow_left
+                color: #fff
+                opacity: 1
+        .dots-style
+            .slick-active
+                button
+                    background: #fff
+                    opacity: 1
+            li
+                button
+                    background: #fff
+                    opacity: .4
 
+    &--about-us
+        height: 60%
 
 .slick-next, .slick-prev
     position: absolute
@@ -34,23 +51,6 @@
 .slick-prev
     right: calc( 0% + 50px )
     border-radius: 5px 0px 0px 5px
-
-.slider--white
-    padding: 100px 20px 0 20px;
-    .slick-next, .slick-prev
-        background: rgba(255, 255, 255, 0.6)
-        .btn_arrow_right, .btn_arrow_left
-            color: #fff
-            opacity: 1
-    .dots-style
-        .slick-active
-            button
-                background: #fff
-                opacity: 1
-        li
-            button
-                background: #fff
-                opacity: .4
 
 .dots-style
     position: absolute
