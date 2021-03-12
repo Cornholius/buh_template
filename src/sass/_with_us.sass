@@ -1,5 +1,5 @@
 .with_us
-    height: 630px
+    min-height: 400px
     background: #EBEBEB
     padding: 100px 0 100px 0
     &__header
@@ -21,3 +21,8 @@
         font-size: 48px
         line-height: 69px
         color: #333333
+
+.partners
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr))
+    // grid-template-rows: repeat(3, minmax(150px, 1fr))
