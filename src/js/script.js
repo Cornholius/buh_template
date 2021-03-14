@@ -10,5 +10,13 @@ $(document).ready(function(){
         variableWidth: false,
         prevArrow: '<button type="button" class="slick-prev"><div class="btn_arrow_left"></div></button>',
         nextArrow: '<button type="button" class="slick-next"><div class="btn_arrow_right"></div></button>',
+        responsive: [
+            {
+              breakpoint: 960,
+              settings: {
+               arrows: false, 
+              },
+            },
+          ],
     });
 });

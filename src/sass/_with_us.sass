@@ -24,5 +24,13 @@
 
 .partners
     display: grid
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr))
-    // grid-template-rows: repeat(3, minmax(150px, 1fr))
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))
+    grid-template-rows: repeat(2,minmax(260px, auto))
+    grid-auto-rows: minmax(260px, auto)
+    gap: 10px
+    justify-items: center
+    align-items: center
+    padding-top: 40px
+    &__logo
+        max-height: 260px
+        max-width: 260px 

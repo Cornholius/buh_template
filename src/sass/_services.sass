@@ -16,18 +16,26 @@
         line-height: 69px
         color: #333333
 .cards
-    display: flex
-    flex-wrap: wrap
-    justify-content: space-between;
+    display: grid
+    // flex-wrap: wrap
+    // justify-content: space-between;
     margin-top: 72px
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))
+    grid-template-rows: repeat(2,minmax(260px, auto))
+    grid-auto-rows: minmax(260px, auto)
+    gap: 10px
     &__item
-        display: flex;
-        align-content: end
-        margin-top: 20px;
-        padding: 20px;
-        width: 18vw
-        height: 18vw
-        align-items: flex-end;
+        display: flex  
+        align-items: flex-end
+        text-align: right
+        padding: 20px
+        // display: flex;
+        // align-content: end
+        // margin-top: 20px;
+        // padding: 20px;
+        // width: 260px
+        // height: 260px
+        // align-items: flex-end;
         background: url(../img/services/card_img.png) center center/cover no-repeat
     &__text
         font-family: Lato
@@ -36,5 +44,5 @@
         font-size: 24px
         line-height: 30px
         color: #FFFFFF
-        width: 50%
+        // width: 50%
 
