@@ -11,11 +11,26 @@
     <title>BuhOne Бухгалтерская компания</title>
 </head>
 <body>
-
+    <div class="container">
+        <ul class="mobile_menu">
+            <li class="mobile_menu__item"><a href="#" class="mobile_menu__link">Главная</a></li>
+            <li class="mobile_menu__item"><a href="#require" class="mobile_menu__link">Со своим автомобилем</a></li>
+            <li class="mobile_menu__item"><a href="#require" class="mobile_menu__link">На автомобиле компании</a></li>
+            <li class="mobile_menu__item"><a href="#" class="mobile_menu__link">Требования</a></li>
+            <li class="mobile_menu__item"><a href="#" class="mobile_menu__link">Контакты</a></li>
+            <li class="mobile_menu__item"><a href="#" class="mobile_menu__link">Оставить заявку</a></li>
+        </ul>
+    </div>
+    <div class="mobile_button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header__top">
-                <div class="header__logo"><img class="logo" src="img/header/buhone.svg" alt="logo"></div>
+                <div class="header__logo"><a class="logo anchor" href="#slider-box"><img src="img/header/buhone.svg" alt="logo"></div>
+                <!-- <div class="header__logo"><img class="logo" src="img/header/buhone.svg" alt="logo"></div> -->
                 <div class="header__elem">
                     <div class="contacts">
                         <a class="contacts__item" href="tel:+71112223344"><img class="contacts__img" src="img/header/phone.svg" alt="phone">8 (111) 222-33-44</a>
@@ -25,11 +40,11 @@
                     </div>
                     <nav class="menu menu--mt20">
                         <ul class="menu__list">
-                            <li class="menu__item"><a class="menu__text" href="#">Главная</a></li>
-                            <li class="menu__item"><a class="menu__text" href="#">Услуги</a></li>
-                            <li class="menu__item"><a class="menu__text" href="#">Кейсы</a></li>
-                            <li class="menu__item"><a class="menu__text" href="#">О компании</a></li>
-                            <li class="menu__item"><a class="menu__text" href="#">Контакты</a></li>
+                            <li class="menu__item"><a class="menu__text anchor" href="#slider-box">Главная</a></li>
+                            <li class="menu__item"><a class="menu__text anchor" href="#services">Услуги</a></li>
+                            <li class="menu__item"><a class="menu__text anchor" href="#">Кейсы</a></li>
+                            <li class="menu__item"><a class="menu__text anchor" href="#about_us">О компании</a></li>
+                            <li class="menu__item"><a class="menu__text anchor" href="#footer">Контакты</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -37,7 +52,7 @@
         </div>
     </header>
 
-    <section class="slider-box">
+    <section class="slider-box" id="slider-box">
         <div class="container">
             <div class="slider slider--slider-box">
                 <div class="slider-box__context">
@@ -76,7 +91,7 @@
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <h2 class="services__header">Наши услуги</h2>
             <div class="services__subheader">Мы специализируемся</div>
@@ -103,7 +118,7 @@
         </div>
     </section>
 
-    <section class="about_us">
+    <section class="about_us" id="about_us">
         <div class="container">
             <div class="about">
                 <div class="info">
@@ -190,7 +205,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__elements">
                 <div class="contact-us">
