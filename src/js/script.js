@@ -15,7 +15,7 @@ for (let anchor of anchors) {
 
 window.addEventListener('DOMContentLoaded', () => {
   const menu = document.querySelector('.mobile_menu'),
-  menuItem = document.querySelectorAll('.menu__item'),
+  menuItem = document.querySelectorAll('.mobile_menu__item'),
   hamburger = document.querySelector('.mobile_button');
 
   hamburger.addEventListener('click', () => {
